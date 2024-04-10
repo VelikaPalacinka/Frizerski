@@ -16,7 +16,10 @@
 
 	.logo {
 		position: fixed;
+		top: 5px;
 		left: 20px;
+		height: 3em;
+		aspect-ratio: 1/1;
 	}
 
 	.naruci{
@@ -49,14 +52,14 @@
 
 	.text {
 		width: 30vw;
-		padding: 1em;
+		margin: 1em;
 		text-wrap: wrap;
 		color: var(--color-background);
 	}
 	iframe {
 		width: 30vw;
 		height: 30vh;
-		margin: 0.2em 3em;
+		margin: 0.2em 2.5em;
 	}
 }
 

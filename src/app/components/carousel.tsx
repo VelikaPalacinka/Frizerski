@@ -4,7 +4,6 @@ import Image from "next/image";
 import React, {useEffect, useRef, useState} from "react";
 import UseEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { transform } from 'next/dist/build/swc';
 
 
 export default function Carousel({data} : {
@@ -12,7 +11,7 @@ export default function Carousel({data} : {
         image: string
     }[]
 }) {
-    const [emblaRef] = UseEmblaCarousel({ loop: true }, [Autoplay({delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true})])
+    const [emblaRef] = UseEmblaCarousel({ loop: true }, [Autoplay({delay: 3500, stopOnInteraction: false, stopOnMouseEnter: true})])
     
 
     return (

@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './components.module.scss';
-import { useEffect, useState } from 'react';
+import logo from '../img/logo.png';
 
 export default function Navbar() {
 
@@ -9,9 +10,9 @@ export default function Navbar() {
 		<>
 		<div className={styles.navbar} >
 			<Link className={styles.logo} href="/">
-				LOGO
+				<Image src={logo} fill alt='Logo'/>
 			</Link>
-			<Link className={styles.naruci} href="/naruciSe">Narući se</Link>
+			<Link className={styles.naruci} href="/naruciSe">Naruči se</Link>
 		</div>
 		</>
 	);
