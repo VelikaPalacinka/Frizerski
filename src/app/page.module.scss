@@ -1,0 +1,50 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
+	
+	.hero {
+		width: 100vw;
+		margin-bottom: 1em;
+		padding: 20em 2em;
+		background-image: url(./img/hero.webp);
+		background-size: cover;	
+		color: var(--color-secondary);
+		text-shadow: 1px 1px black;
+
+	}
+
+	.usluge {
+		width: 100vw;
+		margin-bottom: 1em;
+		padding: 20em 2em;
+		background-image: url(./img/higijena.webp);
+		background-size: cover;
+		color: var(--color-secondary);
+		text-shadow: 1px 1px black;		
+	}
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+	
+}
+
+@media (prefers-reduced-motion) {
+	.card:hover span {
+		transform: none;
+	}
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+	
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+	
+}

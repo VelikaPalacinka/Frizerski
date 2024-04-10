@@ -1,0 +1,90 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-height: 3em;
+	backdrop-filter: blur(10px);
+	
+	a {
+		text-decoration: none;
+		color: var(--color-primary);
+	}
+
+	.logo {
+		position: fixed;
+		left: 20px;
+	}
+
+	.naruci{
+		position: fixed;
+		right: 0;
+		margin: 0;
+		padding: 0.8em;
+		border: 1px solid var(--color-secondary);
+		border-radius: 0;
+		background-color: var(--color-secondary);
+
+		&:hover{
+			background-color: var(--color-background);
+			color: var(--color-primary);
+			border-color: var(--color-background);
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 100vw;
+	height: 30vh;
+	background-color: var(--color-primary);
+	
+
+	.text {
+		width: 30vw;
+		padding: 1em;
+		text-wrap: wrap;
+		color: var(--color-background);
+	}
+	iframe {
+		width: 30vw;
+		height: 30vh;
+		margin: 0.2em 3em;
+	}
+}
+
+.gallery {
+		overflow: hidden;
+		margin-bottom: 1em;
+		width: 100vw;
+		/* overflow-x: scroll;
+		scrollbar-color: var(--color-secondary) var(--color-background);
+		scrollbar-width: thin;	 */
+
+	.slide {
+		display: flex;
+	}
+	.slika {
+		margin: 0 0.2em;
+		position: relative;
+		height: 15vw;
+		aspect-ratio: 1/1;
+		
+		img {
+			border: 1px solid black;
+			border-radius: 10%;
+			overflow: hidden;
+		}
+		}
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+}
